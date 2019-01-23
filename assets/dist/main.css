@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);body {
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
+  body #page {
+    display: flex;
+    flex-wrap: wrap; }
+    body #page header {
+      width: 100%;
+      background-color: #353B47;
+      border-bottom: 2px solid #F28F3B; }
+      body #page header h1 {
+        margin: 10px;
+        font-size: 32px;
+        line-height: 35px;
+        color: #F28F3B; }
+    body #page aside {
+      width: 300px;
+      height: calc(100% - 76px);
+      background-color: #353B47; }
+      body #page aside section {
+        margin: 20px;
+        background-color: #3C4452;
+        padding: 10px; }
+        body #page aside section h1 {
+          color: #F28F3B;
+          font-size: 18px;
+          margin: 0;
+          text-align: center; }
+        body #page aside section p {
+          color: white;
+          font-size: 12px; }
+        body #page aside section ul {
+          list-style-type: none;
+          padding: 0; }
+          body #page aside section ul li {
+            display: flex;
+            width: 200px;
+            margin: 0 auto;
+            padding: 10px;
+            cursor: pointer;
+            user-select: none; }
+            body #page aside section ul li #title {
+              margin: 0;
+              line-height: 30px;
+              fons-size: 28px;
+              color: white;
+              margin-left: 20px; }
+            body #page aside section ul li #icon {
+              width: 30px;
+              height: 30px; }
+            body #page aside section ul li .music {
+              background-image: url(img/d3380adfdab00726294f4b8a74f420c1.svg); }
+            body #page aside section ul li .film {
+              background-image: url(img/5316d3fda3902412ef78d79d66899b6e.svg); }
+            body #page aside section ul li .art {
+              background-image: url(img/646fbea279cae6c75d7f8e54b91b2ac7.svg); }
+            body #page aside section ul li .misc {
+              background-image: url(img/fa22faf9b6ece5b7bb98ed39d2f0bb54.svg); }
+            body #page aside section ul li:hover {
+              background-color: #353B47; }
+    body #page footer {
+      width: 100%;
+      padding: 5px 10px;
+      background-color: #F28F3B;
+      display: flex;
+      flex-wrap: wrap; }
+      body #page footer p {
+        margin: 0;
+        margin-right: 50px;
+        font-size: 10px;
+        line-height: 10px; }
+    body #page #main {
+      width: calc(100% - 300px);
+      height: calc(100% - 76px);
+      background-color: #3C4452; }
+      body #page #main #map {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        z-index: 1; }
+      body #page #main #overlay {
+        width: calc(100% - 100px);
+        height: calc(100% - 100px);
+        position: relative;
+        z-index: 2;
+        background-color: rgba(53, 59, 71, 0.8);
+        padding: 50px; }
+        body #page #main #overlay #popUp {
+          width: 80%;
+          margin: 0 auto;
+          background-color: #3C4452; }
+          body #page #main #overlay #popUp #header {
+            height: 50px;
+            width: 100%;
+            background-color: #353B47;
+            display: flex;
+            flex-wrap: wrap; }
+            body #page #main #overlay #popUp #header #title {
+              width: calc(100% - 70px);
+              line-height: 40px;
+              padding: 5px 10px;
+              font-size: 32px;
+              display: flex;
+              flex-wrap: wrap; }
+            body #page #main #overlay #popUp #header p {
+              margin: 0;
+              color: #F28F3B; }
+            body #page #main #overlay #popUp #header .text {
+              margin-right: 10px; }
+            body #page #main #overlay #popUp #header .venue {
+              color: white;
+              font-weight: bold; }
+            body #page #main #overlay #popUp #header #close {
+              width: 50px;
+              height: 50px;
+              background-image: url(img/db434bd0ef6f3c7aff35172a0ef2ae4c.svg);
+              cursor: pointer; }
+          body #page #main #overlay #popUp ul {
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            max-height: calc(100% - 50px);
+            overflow-y: scroll; }
+            body #page #main #overlay #popUp ul li {
+              background-color: #353B47;
+              margin: 20px auto;
+              width: 90%;
+              height: 180px;
+              padding: 10px;
+              display: flex;
+              flex-wrap: wrap;
+              overflow-y: hidden; }
+              body #page #main #overlay #popUp ul li img {
+                height: 180px; }
+              body #page #main #overlay #popUp ul li #date {
+                width: 90px;
+                padding: 20px;
+                color: white;
+                text-align: center; }
+                body #page #main #overlay #popUp ul li #date #month, body #page #main #overlay #popUp ul li #date #year {
+                  margin: 0;
+                  font-size: 40px;
+                  line-height: 40px; }
+                body #page #main #overlay #popUp ul li #date #day {
+                  margin: 5px;
+                  font-size: 50px;
+                  line-height: 50px;
+                  font-weight: bold; }
+              body #page #main #overlay #popUp ul li #details {
+                width: calc(100% - 545px);
+                padding: 10px;
+                overflow: hidden; }
+                body #page #main #overlay #popUp ul li #details h1 {
+                  margin: 0;
+                  color: white; }
+                body #page #main #overlay #popUp ul li #details #info {
+                  color: #F28F3B;
+                  margin-bottom: 10px; }
+              body #page #main #overlay #popUp ul li #control {
+                width: 150px; }
+                body #page #main #overlay #popUp ul li #control #genre {
+                  width: 50px;
+                  height: 50px;
+                  margin-left: 100px; }
+                body #page #main #overlay #popUp ul li #control .Music {
+                  background-image: url(img/d3380adfdab00726294f4b8a74f420c1.svg); }
+                body #page #main #overlay #popUp ul li #control .Film {
+                  background-image: url(img/5316d3fda3902412ef78d79d66899b6e.svg); }
+                body #page #main #overlay #popUp ul li #control .Arts {
+                  background-image: url(img/646fbea279cae6c75d7f8e54b91b2ac7.svg); }
+                body #page #main #overlay #popUp ul li #control .Miscellaneous {
+                  background-image: url(img/fa22faf9b6ece5b7bb98ed39d2f0bb54.svg); }
+                body #page #main #overlay #popUp ul li #control a {
+                  text-decoration: none; }
+                  body #page #main #overlay #popUp ul li #control a #button {
+                    margin-top: 80px;
+                    width: inherit;
+                    background-color: #F28F3B;
+                    color: white;
+                    line-height: 30px;
+                    font-size: 28px;
+                    padding: 10px 0;
+                    text-align: center; }
